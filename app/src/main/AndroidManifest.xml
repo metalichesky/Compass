@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dmitriy.compas">
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/compass"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TabsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WidgetConfigActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CompassAdapter" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"></action>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:icon="@drawable/compass"
+            android:label="@string/widgetName"
+            android:name=".CompassWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.dmitriy.compas.UPDATE_COMPASS_ANGLE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/info" />
+        </receiver>
+        <service
+            android:enabled="true"
+            android:name=".CompassService">
+        </service>
+    </application>
+</manifest>

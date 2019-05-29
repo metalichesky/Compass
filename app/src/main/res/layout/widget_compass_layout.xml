@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/widgetBackground"
+    android:background="@drawable/widget_transparent_drawable"
+    >
+    <LinearLayout
+     android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/updateButton"
+                style="@style/Transparent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/update"
+                android:src="@drawable/start_simple_light"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="false"
+                />
+            <TextView
+                android:id="@+id/angleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/angle"
+                style="@style/SimpleCaption"
+                >
+            </TextView>
+            <ImageButton
+                android:id="@+id/settingsButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="@style/Transparent"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/settings"
+                android:scaleType="fitXY"
+                android:src="@drawable/settings_simple_light"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/orientationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orientation"
+            style="@style/SimpleCaption"
+            >
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Компас</string>
+    <string name="angle">%1$.0f°</string>
+    <string name="orientation">%1$s</string>
+    <string name="position">(%1$.8f; %2$.8f)</string>
+    <string name="no_position">Геопозиция определяется...</string>
+    <string name="position_copy">Координаты скопированы в буфер</string>
+    <string name="text_tab1">Компас</string>
+    <string name="text_tab2">Карта</string>
+    <string name="text_tab3">Трекинг</string>
+    <string name="clear">Очистить</string>
+    <string name="update">Обновить</string>
+    <string name="table">В таблице</string>
+    <string name="map">На карте</string>
+    <string name="settings">Настройки</string>
+    <string name="widget_background">Фон виджета</string>
+    <string name="widget_caption">Заголовок виджета</string>
+    <string name="compass_update_time">Время обновления данных компаса</string>
+
+    <string name="red">Красный</string>
+    <string name="green">Зелёный</string>
+    <string name="blue">Синий</string>
+    <string name="yellow">Жёлтый</string>
+    <string name="transparent">Прозрачный</string>
+    <string name="black">Тёмный</string>
+    <string name="dark">Затемнённый</string>
+    <string name="ok">Окей</string>
+
+
+
+    <string name="widgetName">Виджет компаса</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
